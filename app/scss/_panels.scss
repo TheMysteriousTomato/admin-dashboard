@@ -1,0 +1,11 @@
+.panel {
+  .panel-heading {
+    background-color: lighten($primary-color, 8);
+  }
+  .panel-title {
+    color: lighten($accent-color, 15);
+  }
+  .panel-body {
+    background-color: white;
+  }
+}

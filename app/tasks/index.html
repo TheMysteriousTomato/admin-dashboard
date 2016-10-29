@@ -1,0 +1,171 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Ticketing System - Tickets</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap-datepicker.min.css" />
+        <link rel="stylesheet" href="../css/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="../css/master.css" />
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Ticketing System</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Dashboard</a></li>
+            <li class="dropdown">
+              <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tickets<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../tickets/new.html">New Ticket</a></li>
+                <li><a href="../tickets/index.html">View Tickets</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="nav-category"><span>Sort By</span></li>
+                <li><a href="#">Open</a></li>
+                <li><a href="#">Pending</a></li>
+                <li><a href="#">Resolved</a><li>
+                <li><a href="#">Assigned to Me</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tasks<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">New Task</a><li>
+                <li><a href="index.html">View Tasks</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-userinfo"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Signed in as Mark Malone<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="taskView" tabindex="-1" role="dialog" aria-labelledby="taskViewLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="ticketViewLabel">Task #</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <header class="clearfix">
+        <h2>Tasks</h2>
+
+        <!-- search box -->
+        <form id="ticket-search-box" class="form-inline pull-left form-icon-right">
+          <input id="ticket-search" name="ticket-search" type="text" class="form-control" placeholder="Search">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </form>
+
+        <!-- date filter -->
+        <form id="ticket-date-filter-box" class="form-inline pull-right form-icon-left">
+          <input id="ticket-date-filter" name="ticket-date-filter" type="text" class="form-control" data-provide="datepicker"/>
+          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        </form>
+
+        <!-- Add Button -->
+        <a href="new.html" class="btn btn-default btn-add pull-right" aria-hidden="true">
+          <i class="fa fa-plus"></i>
+        </a>
+      </header>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Ticket #</th>
+            <th>To-Do</th>
+            <th>Due</th>
+            <th><i class="fa fa-check-square-o" aria-hidden="true"></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#">1</a></td>
+            <td>Ticket No. 1</td>
+            <td>Adjust torque and power with custom tune</td>
+            <td><time datetime="2016-10-30">October 30, 2016</time></td>
+            <td><input type="checkbox" value="" /></td>
+          </tr>
+          <tr>
+            <td><a href="#">2</a></td>
+            <td>Ticket No. 2</td>
+            <td>Adjust torque and power with custom tune</td>
+            <td><time datetime="2016-10-25">October 25, 2016</time></td>
+            <td><input type="checkbox" value="" /></td>
+          </tr>
+          <tr>
+            <td><a href="#">3</a></td>
+            <td>Ticket No. 3</td>
+            <td>Adjust torque and power with custom tune</td>
+            <td><time datetime="2016-10-24">October 24, 2016</time></td>
+            <td><input type="checkbox" value="" /></td>
+          </tr>
+          <tr>
+            <td><a href="#">4</a></td>
+            <td>Ticket No. 4</td>
+            <td>Adjust torque and power with custom tune</td>
+            <td><time datetime="2016-11-01">November 1, 2016</time></td>
+            <td><input type="checkbox" value="" /></td>
+          </tr>
+          <tr>
+            <td><a href="#">5</a></td>
+            <td>Ticket No. 5</td>
+            <td>Adjust torque and power with custom tune</td>
+            <td><time datetime="2016-09-30">September 30, 2016</time></td>
+            <td><input type="checkbox" value="" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </main><!-- /main -->
+    <footer>
+      <hr />
+      <p>&copy; Ticketing System - Malone Tuning Ltd.</p>
+    </footer>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script src="../js/vendor/bootstrap.min.js"></script>
+      <script src="../js/vendor/bootstrap-datepicker.min.js"></script>
+
+      <script src="../js/main.js"></script>
+      <script src="../js/tasksModal.js"></script>
+  </body>
+</html>

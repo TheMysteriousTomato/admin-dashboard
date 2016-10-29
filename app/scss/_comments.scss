@@ -1,0 +1,23 @@
+// _comments.scss
+.comment {
+  header {
+    .comment-author {
+      font-weight: bold;
+    }
+    .fa-circle {
+      font-size: 0.25em;
+    }
+    .comment-date {
+      font-size: 0.85em;
+    }
+  }
+
+  margin: 10px auto;
+  padding: 5px 15px;
+  border-left: 1px solid $primary-color;
+  background-color: lighten($accent-color-light, 18);
+}
+
+.comment-admin {
+  border-left: 1px solid darken($accent-color-dark, 10);
+}

@@ -1,0 +1,244 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Ticketing System</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/master.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Ticketing System</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Dashboard</a></li>
+            <li class="dropdown">
+              <a href="tickets/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tickets<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="tickets/new.html">New Ticket</a></li>
+                <li><a href="tickets/index.html">View Tickets</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="nav-category"><span>Sort By</span></li>
+                <li><a href="#">Open</a></li>
+                <li><a href="#">Pending</a></li>
+                <li><a href="#">Resolved</a><li>
+                <li><a href="#">Assigned to Me</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tasks<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">New Task</a><li>
+                <li><a href="tasks/index.html">View Tasks</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-userinfo"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Signed in as Mark Malone<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <main class="container">
+      <header>
+        <h2>Dashboard</h2>
+        <hr />
+      </header>
+      <div class="row">
+        <div class="col-md-8">
+          <div id="upcoming-tickets" class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Upcoming Tickets</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Due</th>
+                    <th>Assigned To</th>
+                    <th colspan="2">...</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">1</a></td>
+                    <td>Ticket No. 1</td>
+                    <td><span class="label label-primary">Open</span></td>
+                    <td><time datetime="2016-10-30">October 30, 2016</time></td>
+                    <td><a href="#">Mark</a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">2</a></td>
+                    <td>Ticket No. 2</td>
+                    <td><span class="label label-primary">Open</span></td>
+                    <td><time datetime="2016-10-25">October 25, 2016</time></td>
+                    <td><a href="#">John</a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">3</a></td>
+                    <td>Ticket No. 3</td>
+                    <td><span class="label label-success">Closed</span></td>
+                    <td><time datetime="2016-10-24">October 24, 2016</time></td>
+                    <td><a href="#">Joseph</a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">4</a></td>
+                    <td>Ticket No. 4</td>
+                    <td><span class="label label-info">Pending<span></td>
+                    <td><time datetime="2016-11-01">November 1, 2016</time></td>
+                    <td><a href="#">Chantal</a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">5</a></td>
+                    <td>Ticket No. 5</td>
+                    <td><span class="label label-success">Closed</span></td>
+                    <td><time datetime="2016-09-30">September 30, 2016</time></td>
+                    <td><a href="#">Bonnie</a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    <td><a href="#" class="btn btn-default"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div><!--/#upcoming-tickets -->
+
+          <div id="recent-tasks" class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Recent Tasks</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Ticket #</th>
+                    <th>Ticket Title</th>
+                    <th>Task</th>
+                    <th>Due</th>
+                    <th><i class="fa fa-check-square-o" aria-hidden="true"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">1</a></td>
+                    <td>Ticket No. 1</td>
+                    <td>Ticket Title One</td>
+                    <td>Finish up dyno chart</td>
+                    <td><time datetime="2016-10-30">October 30, 2016</time></td>
+                    <td><input type="checkbox" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">2</a></td>
+                    <td>Ticket No. 2</td>
+                    <td>Ticket Title Two</td>
+                    <td>Decrypt tune file</td>
+                    <td><time datetime="2016-10-25">October 25, 2016</time></td>
+                    <td><input type="checkbox" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">3</a></td>
+                    <td>Ticket No. 3</td>
+                    <td>Ticket Title Three</td>
+                    <td>Talk to vehicle owner of current limitations</td>
+                    <td><time datetime="2016-10-24">October 24, 2016</time></td>
+                    <td><input type="checkbox" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">4</a></td>
+                    <td>Ticket No. 4</td>
+                    <td>Ticket Title Four</td>
+                    <td>Issues related to local bylaws</td>
+                    <td><time datetime="2016-10-11">October 11, 2016</time></td>
+                    <td><input type="checkbox" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">5</a></td>
+                    <td>Ticket No. 5</td>
+                    <td>Ticket Title Five</td>
+                    <td>Call about issues with ecu</td>
+                    <td><time datetime="2016-09-30">September 30, 2016</time></td>
+                    <td><input type="checkbox" value="" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div><!--/#recent-tasks -->
+        </div>
+        <div class="col-md-4">
+          <div id="recent-activity" class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Recent Activity</h3>
+            </div>
+            <div class="panel-body">
+                <div class="activity">
+                  <h5>
+                    Ticket #1105
+                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  </h5>
+                  <ul>
+                    <li>Mark commented yesterday...</li>
+                    <li>Adam paid $50.00 with PayPal</li>
+                  </ul>
+                </div>
+
+                <div class="activity">
+                  <h5>
+                    Ticket #1115
+                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  </h5>
+                  <ul>
+                    <li>Mark submitted a tune file yesterday...</li>
+                    <li>Adam paid $50.00 with PayPal</li>
+                  </ul>
+                </div>
+            </div>
+          </div><!--/#recent-activity -->
+        </div>
+      </main><!-- /main -->
+      <footer>
+        <hr />
+        <p>&copy; Ticketing System - Malone Tuning Ltd.</p>
+      </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

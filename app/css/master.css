@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed");
+/* RGB */
+body {
+  font-family: 'Lato', sans-serif;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: #404040;
+  background-color: #fffcf9; }
+
+.container {
+  margin-top: 25px;
+  padding-top: 25px; }
+  .container header {
+    margin: 2% auto; }
+
+footer {
+  width: 80%;
+  margin: 0 auto; }
+  footer p {
+    color: #0c6291;
+    margin-left: 25px; }
+
+/* Default styling */
+p {
+  max-width: 50em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', serif;
+  color: #0c6291; }
+
+a {
+  color: #54b3ac; }
+
+a:hover,
+a:focus {
+  color: #81d5cf; }
+
+.btn {
+  border-color: #54b3ac; }
+
+.btn:hover {
+  border-color: #b1ede8;
+  background-color: #54b3ac; }
+  .btn:hover .fa {
+    color: white; }
+
+/**
+ * Styling for a small helper text
+   inside a dropdown menu
+ */
+li.nav-category {
+  display: block;
+  margin: 4.7619% auto;
+  padding: 0 0.8em;
+  font-size: 0.75em;
+  text-transform: uppercase; }
+
+.nav-userinfo ul.dropdown-menu {
+  width: 100%; }
+
+@media (max-width: 767px) {
+  li.nav-category {
+    margin: 5px auto; } }
+
+/**
+ * Styling the Bootstrap navbar
+ */
+.navbar-default {
+  background-color: #0c6291;
+  border-color: #b1ede8; }
+  .navbar-default .navbar-brand {
+    color: white; }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: white; }
+  .navbar-default .navbar-nav > li > a {
+    color: white; }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: white; }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #0c6291;
+    background-color: #b0d0d3; }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #0c6291;
+    background-color: #b0d0d3; }
+  .navbar-default .navbar-nav > .active > a .caret {
+    border-top-color: #0c6291;
+    border-bottom-color: #0c6291; }
+  .navbar-default .navbar-toggle {
+    border: none;
+    background-color: transparent; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: white; }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: transparent; }
+
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    background-color: white; }
+  .navbar-nav .open .dropdown-menu > li > a {
+    color: #777; }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #777; } }
+
+#recent-activity {
+  height: inherit; }
+
+.activity {
+  margin: 25px auto; }
+  .activity h5 {
+    text-transform: uppercase; }
+    .activity h5 a {
+      visibility: hidden; }
+  .activity h5:hover a {
+    visibility: visible; }
+  .activity ul {
+    list-style-type: none;
+    padding-left: 2.50%; }
+    .activity ul li {
+      margin-bottom: 10px;
+      padding-left: 5px;
+      border-left: 1px solid red; }
+    .activity ul li:nth-child(odd) {
+      border-left: 1px solid blue; }
+    .activity ul li:nth-child(even) {
+      border-left: 1px solid green; }
+
+.form-icon, .form-icon-right, .form-icon-left {
+  position: relative; }
+  .form-icon .fa, .form-icon-right .fa, .form-icon-left .fa {
+    display: block;
+    position: absolute;
+    top: 10px;
+    color: #bebebe; }
+
+.form-icon-right .fa {
+  right: 10px; }
+
+.form-icon-right input {
+  padding-right: 30px; }
+
+.form-icon-left .fa {
+  left: 10px; }
+
+.form-icon-left input {
+  padding-left: 30px; }
+
+.panel .panel-heading {
+  background-color: #0f7bb7; }
+
+.panel .panel-title {
+  color: #effbfa; }
+
+.panel .panel-body {
+  background-color: white; }
+
+.comment {
+  margin: 10px auto;
+  padding: 5px 15px;
+  border-left: 1px solid #0c6291;
+  background-color: #c6ece9; }
+  .comment header .comment-author {
+    font-weight: bold; }
+  .comment header .fa-circle {
+    font-size: 0.25em; }
+  .comment header .comment-date {
+    font-size: 0.85em; }
+
+.comment-admin {
+  border-left: 1px solid #41938d; }
+
+/** Buttons **/
+.btn-add {
+  display: block;
+  margin-top: 10px;
+  max-width: 100px;
+  clear: both; }
+
+/** Definition Lists **/
+dd {
+  margin: 10px auto; }
+
+dd p {
+  margin-left: 0;
+  max-width: 600px; }

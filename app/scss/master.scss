@@ -1,0 +1,28 @@
+// master.scss
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed');
+@import '_coolors';
+
+@import '_default';
+@import '_nav';
+@import '_activity';
+@import '_form-icon';
+@import '_panels';
+@import '_comments.scss';
+
+/** Buttons **/
+.btn-add {
+  display: block;
+  margin-top: 10px;
+  max-width: 100px;
+  clear: both;
+}
+
+/** Definition Lists **/
+dd {
+  margin: 10px auto;
+}
+
+dd p {
+  margin-left: 0;
+  max-width: 600px;
+}
