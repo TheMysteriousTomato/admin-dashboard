@@ -1,0 +1,250 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Ticketing System - Ticket</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/master.css" />
+        <link rel="stylesheet" href="../css/font-awesome.min.css" />
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Ticketing System</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Dashboard</a></li>
+            <li class="dropdown active">
+              <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tickets<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">New Ticket</a></li>
+                <li><a href="index.html">View Tickets</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="nav-category"><span>Sort By</span></li>
+                <li><a href="#">Open</a></li>
+                <li><a href="#">Pending</a></li>
+                <li><a href="#">Resolved</a><li>
+                <li><a href="#">Assigned to Me</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="../tasks/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tasks<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">New Task</a><li>
+                <li><a href="../tasks/index.html">View Tasks</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-userinfo"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Signed in as Mark Malone<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <main class="container">
+      <header class="clearfix">
+        <h2>Ticket #1</h2>
+      </header>
+
+      <!-- show tasks alert to trigger modal, displaying the tasks to do! -->
+      <div id="tasks" class="row">
+        <div class="col-md-12">
+          <div class="alert alert-info alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"></span>&times;</span></button>
+            <strong>Heads up!</strong> There are some <a href="#" data-toggle="modal" data-target="#tasksModal">tasks</a> to do for this ticket!
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="tasksModal" tabindex="-1" role="dialog" aria-labelledby="tasksModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="tasksModalLabel">Tasks for Ticket #1</h4>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>ToDo 1</li>
+                <li>ToDo 2</li>
+                <li>ToDo 3</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="ticket-info" class="col-md-12">
+          <h4>Ticket Info</h4>
+          <dl class="dl-horizontal">
+            <dt>Status</dt>
+            <dd><span class="label label-primary">Open</span></dd>
+
+            <dt>Description<dt>
+            <dd>
+              <p>
+                Lorem ipsum dolor sit amet, te alii assueverit liberavisse eam.
+                Iudico quaeque omittantur no usu. Sed ex quando legere, cum id assum legendos, dolor fastidii persecuti ei duo.
+              <p>
+            </dd>
+
+            <dt>Created At</dt>
+            <dd><time datetime="2016-10-25">October 25, 2016</time></dd>
+
+            <dt>Due At</dt>
+            <dd><time datetime="2016-10-30">October 30, 2016</time><dd>
+
+            <dt>Assigned To</dt>
+            <dd>Mark</dd>
+
+            <dt>Watched By</dt>
+            <dd>Chris</dd>
+          </dl>
+        </div><!-- /#ticket-info -->
+      </div>
+
+      <div class="row">
+        <div id="vehicle-info" class="col-md-6">
+          <h4>Vehicle Information</h4>
+          <dl class="dl-horizontal">
+            <dt>Category</dt>
+            <dd>Car / Truck</dd>
+
+            <dt>Brand, Model, Year<dt>
+            <dd>
+              Audi - Audi V3 - 2016
+            </dd>
+
+            <dt>Engine</dt>
+            <dd>TDI 1.8HP</dd>
+
+            <dt>ECU Type</dt>
+            <dd>EDC15<dd>
+          </dl>
+        </div><!-- /#vehicle-info -->
+
+        <div id="tune-info" class="col-md-6">
+          <h4>Tune Information</h4>
+          <dl class="dl-horizontal">
+            <dt>Tune<dt>
+            <dd>Stage 5</dd>
+
+            <dt>Tune Group</dt>
+            <dd>1.9L 115hp</dd>
+          </dl>
+        </div>
+      </div><!-- /#tune-info -->
+
+      <div class="row">
+        <div id="requirements" class="col-md-6">
+          <h4>Additional Requirements</h4>
+          <ul>
+            <li>Adblue Delete</li>
+            <li>EGR Delete</li>
+            <li>EGT Delete</li>
+            <li>Intake Swirl Flap Delete</li>
+          </ul>
+        </div><!-- /#requirements -->
+
+        <div id="features" class="col-md-6">
+          <h4>Optional Features</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec rhoncus maximus placerat. Mauris hendrerit ligula suscipit convallis varius.
+            Proin scelerisque velit a risus placerat, non varius nulla gravida.
+            Maecenas convallis nec velit vel blandit. Vivamus accumsan lacus at imperdiet pretium.
+          </p>
+        </div>
+      </div><!-- /#features -->
+
+      <br />
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Comments</h3>
+
+          <div class="comment">
+            <header>
+              <span class="comment-author">Author One</span>
+              <span class="comment-date">
+                <span class="fa fa-circle" aria-hidden="true"></span>
+                <time datetime="2016-10-31">October 31, 2016</time>
+              </span>
+            </header>
+            <p class="comment-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+              Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+            </p>
+          </div>
+
+          <div class="comment comment-admin">
+            <header>
+              <span class="comment-author">Author Two</span>
+              <span class="comment-date">
+                <span class="fa fa-circle" aria-hidden="true"></span>
+                <time datetime="2016-10-31">October 31, 2016</time>
+              </span>
+            </header>
+            <p class="comment-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+              Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+            </p>
+          </div>
+
+          <div class="comment">
+            <header>
+              <span class="comment-author">Author Three</span>
+              <span class="comment-date">
+                <span class="fa fa-circle" aria-hidden="true"></span>
+                <time datetime="2016-10-31">October 31, 2016</time>
+              </span>
+            </header>
+            <p class="comment-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+              Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </main><!-- /main -->
+    <footer>
+      <hr />
+      <p>&copy; Ticketing System - Malone Tuning Ltd.</p>
+    </footer>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script src="../js/vendor/bootstrap.min.js"></script>
+      <script src="../js/main.js"></script>
+  </body>
+</html>

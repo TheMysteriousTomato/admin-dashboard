@@ -1,0 +1,33 @@
+// _form-icon.scss
+$icon-color: #bebebe;
+
+.form-icon {
+  position: relative;
+
+  .fa {
+    display: block;
+    position: absolute;
+    top: 10px;
+    color: $icon-color;
+  }
+}
+
+.form-icon-right {
+  @extend .form-icon;
+  .fa {
+    right: 10px;
+  }
+  input {
+    padding-right: 30px;
+  }
+}
+
+.form-icon-left {
+  @extend .form-icon;
+  .fa {
+    left: 10px;
+  }
+  input {
+    padding-left: 30px;
+  }
+}

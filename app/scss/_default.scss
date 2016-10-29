@@ -1,0 +1,59 @@
+// _default.scss
+body {
+  font-family: 'Lato', sans-serif;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: lighten(black, 25);
+  background-color: $background-color;
+}
+
+.container {
+  margin-top: 25px;
+  padding-top: 25px;
+
+  header {
+    margin: 2% auto;
+  }
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+
+  p {
+    color: $primary-color;
+    margin-left: 25px;
+  }
+}
+
+/* Default styling */
+p {
+  max-width: 50em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', serif;
+  color: $primary-color;
+}
+
+a {
+  color: $accent-color-dark;
+}
+
+a:hover,
+a:focus {
+  color: $accent-color-light;
+}
+
+.btn {
+  border-color: $accent-color-dark;
+}
+
+.btn:hover {
+  border-color: $accent-color;
+  background-color: $accent-color-dark;
+
+  .fa {
+    color: white;
+  }
+}
